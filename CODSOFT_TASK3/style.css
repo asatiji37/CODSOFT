@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+ body{
+  min-height: 100vh;
+  max-width: 100%;
+   display: grid;
+   place-items: center;
+  background-color:#313131;}
+.calculator{
+    
+    padding: 10px;
+    box-shadow: 0 0  15px #000;
+    border: 2px solid rgb(71, 65, 65);
+    border-radius: 15px;
+    background: linear-gradient( 45deg, #0a0a0a , #d5c593);
+} 
+
+#res{
+    width: 360px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    margin: 10px;
+    background: transparent;
+    color: #fff;
+    font-size: 40px;
+    text-align: right;
+    cursor:auto;
+}
+input::placeholder{
+    color: #fff;
+}
+.btn{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background :#3a3728 ;
+
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 8%;
+    box-shadow: -5px -6px 15px #000000;
+    outline: 1px solid #313131;
+    outline-offset: 3px;
+    cursor: pointer;
+}
+.operator{
+    color: #f0f40d;
+    background: #1e1919;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+
+#equal{
+    background: orangered;
+    font-weight: 1200;
+}
+@media (width < 1200px ) {
+  body{
+    /* height: 100vh; */
+    /* width: 100vh; */
+    
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .calculator{
+   
+    padding: 0px;
+ 
+  }
+  }
+  /* @media(width<350){
+    .calculator{
+        visibility:hidden;
+        display: none;
+    }
+  }
+   */
+  /* @media (width < 900px) {
+    .nav__links {
+      display: none;
+    }
+  
+    .content h1 {
+      font-size: 4rem;
+    }
+  
+    .destination__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (width < 600px) {
+    .search {
+      display: none;
+    }
+  
+    .destination__container {
+      padding-left: 3rem;
+    }
+  
+    .content h1 {
+      font-size: 3rem;
+    }
+  
+    .destination__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  } */
